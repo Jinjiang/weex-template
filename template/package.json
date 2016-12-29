@@ -1,0 +1,7 @@
+{
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "version": "0.1.0",
+  "author": "{{ author }}",
+  "private": true
+}
