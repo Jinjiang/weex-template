@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper" @click="update">
     <image :src="logoUrl" class="logo"></image>
-    <text class="title">Hello {{target}}</text>
+    <text class="title">Hello \{{target}}</text>
   </div>
 </template>
 
