@@ -527,8 +527,8 @@ return /******/ (function(modules) { // webpackBootstrap
   //   <div>
   //     <canvas
   //       :style="{height: size + 'px', width: size + 'px'}"
-  //       height=\{{size}}
-  //       width=\{{size}}
+  //       height={{size}}
+  //       width={{size}}
   //       v-el:qr
   //     ></canvas>
   //   </div>
@@ -1831,7 +1831,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 17 */
 /***/ function(module, exports) {
 
-  module.exports = "\n  <div>\n    <canvas\n      :style=\"{height: size + 'px', width: size + 'px'}\"\n      height=\{{size}}\n      width=\{{size}}\n      v-el:qr\n    ></canvas>\n  </div>\n";
+  module.exports = "\n  <div>\n    <canvas\n      :style=\"{height: size + 'px', width: size + 'px'}\"\n      height={{size}}\n      width={{size}}\n      v-el:qr\n    ></canvas>\n  </div>\n";
 
 /***/ }
 /******/ ])
