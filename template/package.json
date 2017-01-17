@@ -16,11 +16,11 @@
     "debug": "weex-devtool"
   },
   "dependencies": {
-    "vue": "^2.1.7",
+    "vue": "^2.1.8",
     "vue-router": "^2.1.1",
     "vuex": "^2.1.1",
     "vuex-router-sync": "^4.0.1",
-    "weex-vue-render": "^0.1.0-beta.2"
+    "weex-vue-render": "^0.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
@@ -30,9 +30,9 @@
     "qrcode-generator": "^1.1.0",
     "serve": "^1.4.0",
     "vue-loader": "^10.0.2",
-    "vue-template-compiler": "^2.1.7",
+    "vue-template-compiler": "^2.1.8",
     "webpack": "^1.14.0",
     "weex-devtool": "^0.2.64",
-    "weex-loader": "^0.4.0"
+    "weex-loader": "^0.4.1"
   }
 }
