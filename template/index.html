@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./assets/style.css">
   <script src="./config.js"></script>
   <script src="./assets/url.js"></script>
-  <script src="./node_modules/qrcode/build/qrcode.js"></script>
+  <script src="./node_modules/qrcode-generator/qrcode.js"></script>
   <script src="./node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
@@ -29,7 +29,7 @@
       </div>
       <div id="qrcode">
         <h2>QRCode</h2>
-        <a :href="val" target="_blank"><canvas ref="canvas" width="200" height="200"></canvas></a>
+        <a :href="val" target="_blank"><div ref="qrcode"></div></a>
         <p class="bundle-url"><a :href="val" target="_blank">{{val}}</a></p>
       </div>
     </div>
@@ -41,8 +41,10 @@
       template: '#app-template',
       data: { val: url },
       mounted: function () {
-        var qrcodedraw = new QRCodeLib.QRCodeDraw()
-        qrcodedraw.draw(this.$refs.canvas, this.val, function () {})
+        var qr = qrcode(4, 'L')
+        qr.addData(this.val)
+        qr.make()
+        this.$refs.qrcode.innerHTML = qr.createSvgTag(5, 0)
       }
     })
   </script>
